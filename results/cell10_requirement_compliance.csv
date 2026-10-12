@@ -1,0 +1,19 @@
+Requirement,Status,Evidence
+Dataset acquired from Kaggle or Roboflow,Not met as written,"Own-recorded dataset: acquisition is documented, but the Kaggle/Roboflow source instruction is not literally met."
+Bounding-box annotation format,Confirmed,COCO annotations from verified pedestrian labels
+70/15/15 train-validation-test split,Confirmed approximately,Source-level split recorded in the Cell 3 manifest
+Resizing and normalization,Needs transform-path verification,Installed source inspected; training transform settings not yet traced
+Data augmentation,Needs transform-path verification,Augmentation use must be verified from the actual training pipeline
+Official RF-DETR Nano adaptation,Confirmed,Official rfdetr library and existing trained checkpoint
+CNN/ResNet backbone,Architecture mismatch,Official RF-DETR Nano uses a vision transformer backbone
+Custom receptive-field enhancement module,Not demonstrated,No separately implemented project module has been provided
+Transformer and prediction heads,Source audit required,See official installed package source excerpts
+Hungarian matching and DETR losses,Source audit required,See official installed package source excerpts
+AdamW and learning-rate scheduling,Configured,Saved fine-tuning configuration
+Validation-loss early stopping,Mismatch,Official RF-DETR stopping monitors validation mAP/mAR
+Hyperparameter comparison experiments,Not yet established,Alternative run logs and results must be reviewed
+Saved model checkpoints,Confirmed,/content/drive/MyDrive/Person_Detection/RF_DETR_Final_Project/trained_models/rfdetr_nano_training/checkpoint_best_total.pth
+"Test accuracy, precision, recall, IoU, mAP",Results file exists,Cell 7 final test metrics
+Prediction and error visualizations,Results file exists,Cell 7 and Cell 8 figures
+Screenshots of implementation code,Not yet demonstrated,Actual code screenshots still required
+GitHub repository and README,Not yet demonstrated,Final repository publication remains to be completed

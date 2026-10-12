@@ -1,0 +1,20 @@
+{
+  "repository_name": "RF-DETR-Low-Light-Pedestrian-Detection",
+  "source_notebook": "/content/drive/MyDrive/Colab Notebooks/Untitled6.ipynb",
+  "clean_notebook": "/content/drive/MyDrive/Person_Detection/RF_DETR_Final_Project/github_repository/RF-DETR-Low-Light-Pedestrian-Detection/notebooks/RF_DETR_Low_Light_Pedestrian_Detection.ipynb",
+  "code_cells": 13,
+  "markdown_cells": 12,
+  "exported_result_files": [
+    "cell7_rfdetr_final_test_metrics.csv",
+    "cell8_lighting_performance_comparison.csv",
+    "cell12_rfdetr_validation_comparison.csv",
+    "cell12_metric_differences.csv",
+    "cell10_requirement_compliance.csv"
+  ],
+  "original_dataset_included": false,
+  "model_checkpoints_included": false,
+  "dataset_origin": "Researcher-recorded pedestrian video",
+  "validation_selected_checkpoint": "/content/drive/MyDrive/Person_Detection/RF_DETR_Final_Project/trained_models/rfdetr_nano_training/checkpoint_best_total.pth",
+  "original_test_checkpoint": "/content/drive/MyDrive/Person_Detection/RF_DETR_Final_Project/trained_models/rfdetr_nano_training/checkpoint_best_total.pth",
+  "generated_date": "2026-10-12T11:42:03.656649"
+}

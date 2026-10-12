@@ -1,0 +1,57 @@
+{
+  "dataset_origin": "Original researcher-recorded pedestrian video; frames extracted and processed in earlier CO1 activities.",
+  "dataset_source_requirement": "Own-recorded dataset: acquisition is documented, but the Kaggle/Roboflow source instruction is not literally met.",
+  "object_category": "person",
+  "model": "RFDETRNano",
+  "rfdetr_version": "1.11.2",
+  "installed_package_directory": "/usr/local/lib/python3.13/dist-packages/rfdetr",
+  "best_checkpoint": "/content/drive/MyDrive/Person_Detection/RF_DETR_Final_Project/trained_models/rfdetr_nano_training/checkpoint_best_total.pth",
+  "training_configuration_file": "/content/drive/MyDrive/Person_Detection/RF_DETR_Final_Project/evaluation_results/cell5_rfdetr_training_configuration.json",
+  "training_configuration": {
+    "dataset_dir": "/content/drive/MyDrive/Person_Detection/RF_DETR_Final_Project/dataset/rfdetr_coco",
+    "output_dir": "/content/drive/MyDrive/Person_Detection/RF_DETR_Final_Project/trained_models/rfdetr_nano_training",
+    "epochs": 15,
+    "batch_size": 2,
+    "grad_accum_steps": 4,
+    "eval_batch_size": 1,
+    "lr": 0.0001,
+    "optimizer": "adamw",
+    "lr_scheduler": "cosine",
+    "early_stopping": true,
+    "early_stopping_patience": 5,
+    "early_stopping_min_delta": 0.001,
+    "best_model_metric": "map",
+    "skip_best_epochs": 1,
+    "checkpoint_interval": 5,
+    "seed": 42,
+    "device": "cuda"
+  },
+  "training_output_directories": [
+    "rfdetr_nano_training"
+  ],
+  "dataset_split_summary": [
+    {
+      "Split": "test",
+      "Images": 90,
+      "Source_Frames": 30,
+      "Pedestrian_Boxes": 473,
+      "Image_Percent": 15.0
+    },
+    {
+      "Split": "train",
+      "Images": 420,
+      "Source_Frames": 140,
+      "Pedestrian_Boxes": 2074,
+      "Image_Percent": 70.0
+    },
+    {
+      "Split": "valid",
+      "Images": 90,
+      "Source_Frames": 30,
+      "Pedestrian_Boxes": 443,
+      "Image_Percent": 15.0
+    }
+  ],
+  "architecture_note": "Official RF-DETR Nano is a real-time detection transformer. A custom ResNet backbone or separate receptive-field enhancement module has not been demonstrated.",
+  "early_stopping_note": "Official RF-DETR early stopping is based on validation mAP or mAR rather than the assignment's requested validation loss."
+}

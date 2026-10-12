@@ -1,0 +1,2 @@
+Model,Test_Images,Ground_Truth_Objects,Predicted_Objects_at_Confidence,TP,FP,FN,Confidence_Threshold,IoU_Threshold,Detection_Accuracy_Percent,Precision_Percent,Recall_Percent,F1_Percent,mAP50_Percent,mAP50_95_Percent,Hungarian_Geometric_Matches,Hungarian_Correct_Class_Matches,Matched_Object_Class_Accuracy_Percent,Image_Averaged_Matched_IoU,Mean_Inference_Seconds
+RF-DETR Nano,90,473,527,334,193,139,0.25,0.5,50.15,63.378,70.613,66.8,71.783,37.06,334,334,100.0,0.7677686405529818,0.03769051600001047

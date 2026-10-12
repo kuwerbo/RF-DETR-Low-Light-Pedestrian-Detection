@@ -1,0 +1,15 @@
+rfdetr[train,loggers]
+torch
+torchvision
+numpy
+pandas
+scipy
+scikit-learn
+Pillow
+matplotlib
+pycocotools
+supervision
+reportlab
+pymupdf
+pygments
+tensorboard
